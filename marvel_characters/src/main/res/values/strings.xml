@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Marvel</string>
+    <string name="no_result">데이터를 불러오지 못했습니다</string>
+    <string name="bookmark_list">Bookmark List</string>
+    <string name="character_list">Marvel Characters</string>
+
+    <array name="tab_title">
+        <item>@string/character_list</item>
+        <item>@string/bookmark_list</item>
+    </array>
+
+    <array name="tab_icon">
+        <item>@drawable/baseline_groups_24</item>
+        <item>@drawable/baseline_star_24</item>
+    </array>
+</resources>

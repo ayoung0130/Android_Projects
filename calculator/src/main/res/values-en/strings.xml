@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="result">Result</string>
+    <string name="div">Div</string>
+    <string name="mul">Mul</string>
+    <string name="min">Min</string>
+    <string name="add">Add</string>
+    <string name="hint_number">0</string>
+    <string name="hint_number1">First Num</string>
+    <string name="hint_number2">Second Num</string>
+</resources>

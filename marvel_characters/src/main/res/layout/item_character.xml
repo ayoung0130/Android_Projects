@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.example.marvel.network.response.CharacterResult" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp">
+
+        <ImageView
+            android:id="@+id/image"
+            setUrlImg="@{item.thumbnail}"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="100dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:text="@{item.name}"
+            android:textSize="15sp"
+            app:layout_constraintEnd_toStartOf="@+id/btn_bookmark"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image" />
+
+        <Button
+            android:id="@+id/btn_bookmark"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/baseline_star_outline_24"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/image" />
+
+        <TextView
+            android:id="@+id/tv_urls"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:text="@{item.toStringUrls()}"
+            app:layout_constraintEnd_toStartOf="@+id/tv_comics"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+
+        <TextView
+            android:id="@+id/tv_comics"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:text="@{item.toStringComics()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/tv_urls"
+            app:layout_constraintTop_toBottomOf="@id/btn_bookmark" />
+
+        <TextView
+            android:id="@+id/tv_stories"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:text="@{item.toStringStories()}"
+            app:layout_constraintEnd_toStartOf="@+id/tv_events"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tv_urls" />
+
+        <TextView
+            android:id="@+id/tv_events"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:text="@{item.toStringEvents()}"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@id/tv_stories"
+            app:layout_constraintTop_toBottomOf="@id/tv_comics" />
+
+        <TextView
+            android:id="@+id/tv_series"
+            android:layout_width="60dp"
+            android:layout_height="15dp"
+            android:text="@{item.toStringSeries()}"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.13"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_stories" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

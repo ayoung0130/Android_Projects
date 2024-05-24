@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Kakao_book</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+    <string name="bookmark">Bookmark</string>
+    <string name="search_hint">책 제목을 검색하세요</string>
+    <string name="Bookmark_List">Bookmark List</string>
+
+    <array name="tab_title">
+        <item>@string/search</item>
+        <item>@string/bookmark</item>
+    </array>
+
+    <array name="tab_icon">
+        <item>@drawable/search</item>
+        <item>@drawable/like_red</item>
+    </array>
+</resources>

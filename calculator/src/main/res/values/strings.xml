@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">calculator</string>
+    <string name="result">결과</string>
+    <string name="div">나누기</string>
+    <string name="mul">곱하기</string>
+    <string name="min">빼기</string>
+    <string name="add">더하기</string>
+    <string name="hint_number">0</string>
+    <string name="hint_number1">첫번째 값</string>
+    <string name="hint_number2">두번째 값</string>
+</resources>
