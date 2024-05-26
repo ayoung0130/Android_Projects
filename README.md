@@ -1,20 +1,21 @@
 # Android Projects
 
-### Around Hospital
+### AroundHospital
 위치 기반 병원 찾기 애플리케이션
 2024.04. ~ 2024.05. (2개월)
 
-### Marvel Characters
-마블 캐릭터 로드 및 북마크 기능
+### MarvelCharacters
+마블 api를 활용한 캐릭터 로드 및 북마크 기능
 2024.03. ~ 2024.03. (1개월)
 
-### Search Book
-카카오 도서 검색 api 기반 책 검색 및 북마크 기능
+### SearchBook
+카카오 도서 검색 api를 활용한 책 검색 및 북마크 기능
 2024.01. ~ 2024.02. (2개월)
 
-### To do
-Room을 활용한 Todo 메모 앱
+### Memo
+Room을 활용한 메모 앱
 2024.01. ~ 2024.01. (1개월)
+2024.05. compose 리팩토링
 
 ### Calculator
 사칙연산을 수행하는 간단한 계산 기능
