@@ -8,15 +8,15 @@ import androidx.room.Query
 import kotlinx.coroutines.flow.Flow
 
 @Dao
-interface SampleDao {
+interface MemoDao {
 
     @Query("SELECT * FROM sample")
-    fun getAll(): Flow<List<SampleEntity>>
+    fun getAll(): Flow<List<MemoEntity>>
 
     @Delete
-    suspend fun delete(entity: SampleEntity)
+    suspend fun delete(entity: MemoEntity)
 
     @Insert(onConflict = OnConflictStrategy.REPLACE)
-    suspend fun insert(entity: SampleEntity)
+    suspend fun insert(entity: MemoEntity)
 
 }

@@ -2,12 +2,8 @@ package com.example.room.di
 
 import android.app.Application
 import androidx.room.Room
-import com.example.room.data.repo.SampleRepository
-import com.example.room.data.repo.SampleRepositoryImpl
-import com.example.room.data.source.local.SampleLocalDataSource
-import com.example.room.data.source.local.SampleLocalDataSourceImpl
-import com.example.room.room.SampleDao
-import com.example.room.room.SampleDatabase
+import com.example.room.room.MemoDao
+import com.example.room.room.MemoDatabase
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -19,10 +15,10 @@ import javax.inject.Singleton
 object RoomModule {
     @Provides
     @Singleton
-    fun provideDatabase(app: Application): SampleDatabase {
-        return Room.databaseBuilder(app, SampleDatabase::class.java, "sample.db").build()
+    fun provideDatabase(app: Application): MemoDatabase {
+        return Room.databaseBuilder(app, MemoDatabase::class.java, "sample.db").build()
     }
 
     @Provides
-    fun provideSampleDao(db: SampleDatabase): SampleDao = db.sampleDao()
+    fun provideSampleDao(db: MemoDatabase): MemoDao = db.sampleDao()
 }

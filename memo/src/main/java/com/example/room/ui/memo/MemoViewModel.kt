@@ -2,8 +2,8 @@ package com.example.room.ui.memo
 
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.room.data.repo.SampleRepository
-import com.example.room.room.SampleEntity
+import com.example.room.data.repo.MemoRepository
+import com.example.room.room.MemoEntity
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -18,7 +18,7 @@ import java.util.Locale
 import javax.inject.Inject
 
 @HiltViewModel
-open class MemoViewModel @Inject constructor(private val sampleRepository: SampleRepository) :
+open class MemoViewModel @Inject constructor(private val sampleRepository: MemoRepository) :
     ViewModel() {
 
     private val _memoState = MutableStateFlow(MemoState())
@@ -42,7 +42,7 @@ open class MemoViewModel @Inject constructor(private val sampleRepository: Sampl
         if (_memoState.value.inputTitle.isBlank() || _memoState.value.inputContent.isBlank()) {
             return@launch
         }
-        val memoEntity = SampleEntity(
+        val memoEntity = MemoEntity(
             title = _memoState.value.inputTitle,
             content = _memoState.value.inputContent,
             date = getCurrentData()
@@ -54,7 +54,7 @@ open class MemoViewModel @Inject constructor(private val sampleRepository: Sampl
     }
 
 
-    fun delete(item: SampleEntity) = viewModelScope.launch(Dispatchers.IO) {
+    fun delete(item: MemoEntity) = viewModelScope.launch(Dispatchers.IO) {
         sampleRepository.delete(item)
     }
 

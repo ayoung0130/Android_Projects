@@ -1,9 +1,9 @@
 package com.example.room.di
 
-import com.example.room.data.repo.SampleRepository
-import com.example.room.data.repo.SampleRepositoryImpl
-import com.example.room.data.source.local.SampleLocalDataSource
-import com.example.room.data.source.local.SampleLocalDataSourceImpl
+import com.example.room.data.repo.MemoRepository
+import com.example.room.data.repo.MemoRepositoryImpl
+import com.example.room.data.source.local.MemoLocalDataSource
+import com.example.room.data.source.local.MemoLocalDataSourceImpl
 import dagger.Binds
 import dagger.Module
 import dagger.hilt.InstallIn
@@ -17,12 +17,12 @@ abstract class RepositoryModule {
     @Binds
     @Singleton
     abstract fun bindSampleRepository(
-        sampleRepositoryImpl: SampleRepositoryImpl
-    ): SampleRepository
+        memoRepositoryImpl: MemoRepositoryImpl
+    ): MemoRepository
     @Binds
     @Singleton
     abstract fun bindSampleLocalDataSource(
-        sampleLocalDataSourceImpl: SampleLocalDataSourceImpl
-    ): SampleLocalDataSource
+        sampleLocalDataSourceImpl: MemoLocalDataSourceImpl
+    ): MemoLocalDataSource
 
 }

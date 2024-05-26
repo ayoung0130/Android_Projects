@@ -13,10 +13,10 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.example.room.room.SampleEntity
+import com.example.room.room.MemoEntity
 
 @Composable
-fun MemoItem(item: SampleEntity, onDeleteClick: (SampleEntity) -> Unit) {
+fun MemoItem(item: MemoEntity, onDeleteClick: (MemoEntity) -> Unit) {
     Card(
         modifier = Modifier
             .fillMaxWidth()
@@ -41,7 +41,7 @@ fun MemoItem(item: SampleEntity, onDeleteClick: (SampleEntity) -> Unit) {
 @Preview
 @Composable
 fun PreviewMemoItem() {
-    val sampleEntity = SampleEntity(
+    val sampleEntity = MemoEntity(
         num = 1,
         title = "Sample Title",
         content = "Sample Content",
