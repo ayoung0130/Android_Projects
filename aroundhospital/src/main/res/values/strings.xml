@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">aroundhospital</string>
+
+    <array name="tab_icon">
+        <item>@drawable/search</item>
+        <item>@drawable/bookmark</item>
+    </array>
+
+    <string name="call">전화 걸기</string>
+    <string name="open_link">링크 열기</string>
+    <string name="copy_link">링크 복사</string>
+    <string name="close">닫기</string>
+
+    <string name="bookmark_title">즐겨찾기</string>
+
+    <string name="bookmark_is_empty">즐겨찾기 항목이 비어있습니다.</string>
+
+</resources>

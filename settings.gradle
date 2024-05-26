@@ -19,7 +19,7 @@ rootProject.name = "Android Projects"
 include ':app'
 include ':base'
 include ':calculator'
-include ':to_do'
+include ':memo'
 include ':search_book'
 include ':marvel_characters'
-
+include ':aroundhospital'

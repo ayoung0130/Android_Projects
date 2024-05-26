@@ -11,11 +11,12 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/aroundhospital" />
             <option value="$PROJECT_DIR$/base" />
             <option value="$PROJECT_DIR$/calculator" />
             <option value="$PROJECT_DIR$/marvel_characters" />
+            <option value="$PROJECT_DIR$/memo" />
             <option value="$PROJECT_DIR$/search_book" />
-            <option value="$PROJECT_DIR$/to_do" />
           </set>
         </option>
       </GradleProjectSettings>
